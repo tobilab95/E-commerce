@@ -1,0 +1,10 @@
+/// escapes double and single quotes in strings so Signal doesn't Fucking barf
+/// when interpolating data elements. avoids double escaping automatically.
+function escapeQuotes(s) {
+  var escapeHelper = function(s, thingToEscape, escapedVersion) {
+    return s.replace(escapedVersion, thingToEscape).replace(thingToEscape, escapedVersion);
+  };
+  s = escapeHelper(s, '"', '&#34;');
+  s = escapeHelper(s, '\'', '&#39;');
+  return s;
+}
