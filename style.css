@@ -6,10 +6,9 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
-header{
-   
-}
+
 .header-div {
     display: flex;
     flex-direction: row;
@@ -19,7 +18,6 @@ header{
     padding-right: 20px;
     color: white;
     height: 39px;
-   
 }
 
 .header-list {
@@ -66,7 +64,6 @@ header a {
 }
 
 .div-input {
-    width: 400px;
     height: 45px;
     border: 1px solid black;
     display: flex;
@@ -76,41 +73,45 @@ header a {
 }
 
 div input {
-    height: 100%;
-    border: none;
     padding-left: 11px;
     font-size: 19px;
     width: 400px;
-   
+    height: 100%;
+}
+
+.kta {
+    display: flex
 }
 
 button {
-    height: 100%;
     padding: 0px 21px;
-    border: 0px;
     background-color: #003953;
     color: white;
+    margin-left: -7px;
+    border-radius: 4px;
 }
 
 .cart {
-    
     border: 2px solid #a7e688;
-    color:  #035d59;
+    color: #035d59;
     margin-left: 396px;
-    padding: 15px;
-    font-family:  Sans,sans-serif;
-    
+    padding: 10px;
+    font-family: Sans, sans-serif;
+    border-radius: 5px;
+    height: 45px;
+    font-weight: 900;
 }
 
-.nav{
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color:#e8ecf0;;
+    background-color: #e8ecf0;
+    ;
 }
 
-.nav select{
+.nav select {
     width: 70px;
     height: 100%;
     border: none;
@@ -122,7 +123,235 @@ button {
     justify-content: space-between;
 }
 
-li{
+li {
     margin-right: 10px;
     list-style-type: none;
+}
+
+.vba {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.ps {
+    color: white;
+}
+
+.ps:hover {
+    text-decoration: underline;
+}
+
+.ksm {
+    position: relative;
+}
+
+.prb {
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: 46px;
+    left: 70px;
+    padding: 43px;
+}
+
+.sts {
+    border: 2px solid black;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.img-ps {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-ps img {
+    width: 158px;
+    height: 158px;
+}
+
+.img-ps a {
+    text-decoration: none;
+    color: black;
+}
+
+.img-ps a:hover {
+    text-decoration: underline;
+}
+
+.pv {
+    margin-top: 50px;
+}
+
+.pv h2 {
+    margin-left: 25px;
+}
+
+.sdf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sdf img {
+    width: 81%;
+    height: 482px;
+}
+
+.summer a {
+    text-decoration: none;
+    color: white;
+}
+
+.summer h2 {
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.cgb {
+    margin-left: 161px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.gkt {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    line-height: 1.3;
+    background: white;
+    opacity: 0.84;
+    padding: 10px;
+}
+
+.para {
+    text-decoration: underline;
+    color: black;
+}
+
+.tyo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.tyo p {
+    line-height: 1.5;
+}
+
+.fmo {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.tyo:hover .fmo {
+    background-color: black;
+    color: white;
+}
+
+.ggk {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.rdf {
+    background-color: #032c48;
+    color: white;
+    padding-left: 37px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+}
+
+
+
+footer {
+    font: 400 14px Open Sans, sans-serif;
+    background: #003953;
+    color: white;
+}
+
+.ntu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 37px;
+}
+
+.input-h {
+    width: 200px;
+    height: 42px;
+    padding: 8px 12px;
+}
+
+.button-holder {
+    height: 42px;
+    width: 180px;
+    color: white;
+    margin-left: 10px;
+    border: 1px solid white;
+}
+
+.button-holder:hover{
+    background: white;
+    color: black;
+}
+
+
+.button-holder a {
+    text-decoration: none;
+    color: white;
+}
+
+.cls {
+    margin-left: 37px;
+}
+
+.lve {
+    border: 1px;
+    border-radius: 3px;
+    background-color: #144860;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.tsl {
+    border: 2px solid white;
+    width: fit-content;
+    padding: 6px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.tsl:hover{
+    color: black;
+    background-color: white;  
+}
+
+hr{
+    border: 1px solid grey;
+}
+
+.lst p{
+    
+    color:#003953;
+}
+   
+.tln{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.tln:hover{
+    
+    border-bottom: 1px solid #003953;
+  
+    margin-bottom: 1px;
 }
